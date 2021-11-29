@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="833.0" prefWidth="1350.0" styleClass="dark-background" stylesheets="@../../../css/homepagestyles.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.travelmanagement.homepageController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="1274.0" spacing="20.0" styleClass="border-bottom" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="126.0">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/menu2.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Label prefHeight="17.0" prefWidth="53.0" text="Menu" textFill="WHITE">
+                     <padding>
+                        <Insets right="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Pane prefHeight="98.0" prefWidth="208.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" onMouseClicked="#travellingonaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Travelicon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#travellingonaction" prefHeight="25.0" prefWidth="90.0" stylesheets="@../../../css/homepagestyles.css" text="Travelling" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <styleClass>
+                        <String fx:value="dark-background" />
+                        <String fx:value="font-color" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/explore.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Explore" textFill="#f5f0f0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Saved1.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="13.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Saved" textFill="#f5f0f0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/chats1.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Help" textFill="#f5f0f0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="67.0" onMouseDragExited="#profileonaction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Profileicon.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" onAction="#profileonaction" prefHeight="19.0" prefWidth="51.0" stylesheets="@../../../css/homepagestyles.css" text="Profile" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+                     <styleClass>
+                        <String fx:value="dark-background" />
+                        <String fx:value="font-color" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="60.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/Bell.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="17.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Circle fill="DODGERBLUE" radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="29.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/search1.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Circle radius="4.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets left="20.0" right="20.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="dark-background" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1271.0">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="144.0">
+                     <children>
+                        <Label prefHeight="44.0" prefWidth="144.0" text="Travelling" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="48.0" prefWidth="144.0" text="25 posts" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </VBox>
+                  <Pane prefHeight="184.0" prefWidth="993.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" styleClass="bottom" text="Filter" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="1188.0" styleClass="dark-background" VBox.vgrow="ALWAYS">
+               <content>
+                  <HBox alignment="CENTER" styleClass="dark-background">
+                     <children>
+                        <AnchorPane prefHeight="717.0" prefWidth="1343.0" styleClass="dark-background">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="14.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/Goa.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="124.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="Goa" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="133.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="473.0" layoutY="14.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/Kashmir.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="124.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="Kashmir" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="133.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="931.0" layoutY="14.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/Rajasthan.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="131.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="116.0" text="Rajasthan" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="211.0" prefWidth="137.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="124.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="91.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="14.0" layoutY="252.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/Kerala.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="124.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="Kerala" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="133.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="473.0" layoutY="252.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/Lakshadweep.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="194.0">
+                                             <children>
+                                                <Label prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="157.0" text="Lakshadweep" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="211.0" prefWidth="135.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="145.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="931.0" layoutY="252.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/Kolkata.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="124.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="Kolkata" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="211.0" prefWidth="149.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="136.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="14.0" layoutY="493.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/AndamanAndNicobar.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="144.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="117.0" text="Andaman " textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="211.0" prefWidth="165.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="133.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="473.0" layoutY="493.0" prefHeight="220.0" prefWidth="430.0" styleClass="shadow">
+                                 <children>
+                                    <ImageView fitHeight="220.0" fitWidth="430.0" pickOnBounds="true">
+                                       <image>
+                                          <Image url="@../../../images/Punjab.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <HBox prefHeight="220.0" prefWidth="430.0" styleClass="gradient">
+                                       <children>
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="124.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="Trip to" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="Punjab" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                          <Pane prefHeight="200.0" prefWidth="200.0" />
+                                          <VBox alignment="BOTTOM_CENTER" prefHeight="211.0" prefWidth="133.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="0.0" prefWidth="100.0" text="4 Days" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="24.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label alignment="CENTER" prefHeight="56.0" prefWidth="100.0" text="₹10,000" textFill="WHITE">
+                                                   <font>
+                                                      <Font name="System Bold" size="24.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </content>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" left="5.0" right="15.0" />
+               </padding>
+            </ScrollPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.travelmanagement.signupController">
+    <children>
+        <ImageView fx:id="brandingImageView" fitHeight="949.0" fitWidth="1967.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../images/travel.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="498.0" layoutY="205.0" prefHeight="440.0" prefWidth="565.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white;">
+            <Button fx:id="loginbutton" layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#userlogin" opacity="0.53" prefHeight="54.0" prefWidth="270.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white;" text="Log In" />
+            <Button fx:id="signupbutton" layoutX="269.0" layoutY="-1.0" mnemonicParsing="false" onAction="#usersignup" prefHeight="54.0" prefWidth="248.0" style="-fx-background-color: #2f2f2fa3; -fx-text-fill: white;" text="Sign Up" textFill="#5b5151f5" />
+         <TextField fx:id="firstname" layoutX="161.0" layoutY="83.0" prefHeight="27.0" prefWidth="321.0" promptText="Enter Firstname" />
+         <TextField fx:id="username" layoutX="160.0" layoutY="181.0" prefHeight="27.0" prefWidth="322.0" promptText="Enter Username" />
+         <TextField fx:id="lastname" layoutX="160.0" layoutY="135.0" prefHeight="27.0" prefWidth="322.0" promptText="Enter Lastname" />
+         <Button fx:id="savebutton" layoutX="122.0" layoutY="419.0" mnemonicParsing="false" onAction="#savebuttononaction" prefHeight="30.0" prefWidth="322.0" style="-fx-background-radius: 100; -fx-background-color: #1F51FF; -fx-text-fill: white;" text="Save" />
+         <Label layoutX="24.0" layoutY="181.0" prefHeight="26.0" prefWidth="94.0" style="-fx-text-fill: white;" text="Username" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Label layoutX="24.0" layoutY="83.0" prefHeight="26.0" prefWidth="94.0" style="-fx-text-fill: white;" text="Firstname" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="335.0" prefHeight="26.0" prefWidth="130.0" style="-fx-text-fill: white;" text="Confirm Password" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Label layoutX="24.0" layoutY="286.0" prefHeight="26.0" prefWidth="94.0" style="-fx-text-fill: white;" text="Password" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Label layoutX="24.0" layoutY="135.0" prefHeight="26.0" prefWidth="94.0" style="-fx-text-fill: white;" text="Lastname" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <Label layoutX="24.0" layoutY="233.0" prefHeight="26.0" prefWidth="94.0" style="-fx-text-fill: white;" text="Email" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font>
+         </Label>
+         <TextField fx:id="email" layoutX="161.0" layoutY="231.0" prefHeight="30.0" prefWidth="321.0" promptText="Enter Email" />
+         <PasswordField fx:id="pass" layoutX="161.0" layoutY="287.0" prefHeight="30.0" prefWidth="321.0" promptText="Enter Password" />
+         <PasswordField fx:id="cpass" layoutX="161.0" layoutY="333.0" prefHeight="30.0" prefWidth="321.0" promptText="Enter Confirm Password" />
+         <Label fx:id="label" layoutX="140.0" layoutY="378.0" opacity="0.75" style="-fx-text-fill: white;" textFill="WHITE">
+            <font>
+               <Font name="System Bold" size="17.0" />
+            </font>
+         </Label>
+        </AnchorPane>
+    </children>
+</AnchorPane>
